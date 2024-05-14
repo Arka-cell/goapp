@@ -1,0 +1,11 @@
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Stage
+      uses: fjogeleit/http-request-action@v1
+      with:
+        method: POST
+        password: ${{ secrets.SECRET_KEY }}
+        customHeaders: '{"Content-Type": "application/json"}'
+        url: https://tolerant-climbing-wombat.ngrok-free.app/ansible/5
