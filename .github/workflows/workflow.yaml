@@ -1,3 +1,7 @@
+on:
+  push:
+  - main
+  - master
 jobs:
   deployment:
     runs-on: ubuntu-latest
@@ -8,4 +12,4 @@ jobs:
         method: POST
         password: ${{ secrets.SECRET_KEY }}
         customHeaders: '{"Content-Type": "application/json"}'
-        url: https://tolerant-climbing-wombat.ngrok-free.app/ansible/5
+        url: https://tolerant-climbing-wombat.ngrok-free.app/ansible/6
