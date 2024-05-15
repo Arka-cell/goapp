@@ -13,4 +13,4 @@ jobs:
         method: POST
         password: ${{ secrets.SECRET_KEY }}
         customHeaders: '{"Content-Type": "application/json"}'
-        url: https://tolerant-climbing-wombat.ngrok-free.app/ansible/7
+        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/9
