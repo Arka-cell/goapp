@@ -11,6 +11,6 @@ jobs:
       uses: fjogeleit/http-request-action@v1
       with:
         method: POST
-        password: ${{ secrets.SECRET_KEY }}
-        customHeaders: '{"Content-Type": "application/json"}'
-        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/9
+        customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer
+          ${{ secrets.SECRET_KEY }}"'
+        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/10
