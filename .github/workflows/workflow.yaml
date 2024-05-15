@@ -12,5 +12,5 @@ jobs:
       with:
         method: POST
         customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer
-          ${{ secrets.SECRET_KEY }}"'
-        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/10
+          ${{ secrets.SECRET_KEY }}"}'
+        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/11
