@@ -1,7 +1,6 @@
 on:
   push:
     branches:
-    - main
     - master
 jobs:
   deployment:
@@ -13,4 +12,4 @@ jobs:
         method: POST
         customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer
           ${{ secrets.SECRET_KEY }}"}'
-        url: https://tolerant-climbing-wombat.ngrok-free.app/webhook/11
+        url: https://tolerant-climbing-wombat.ngrok-free.app/workflow/3
